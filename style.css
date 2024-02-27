@@ -1,0 +1,57 @@
+/* css/styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Optional: setting a font-family */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Adjust according to your design */
+    margin: 0 auto;
+    padding: 20px; /* Adjust spacing */
+}
+
+/* Section styles */
+.section {
+    float: left;
+    width: 100%; /* By default, takes full width */
+    margin-bottom: 20px; /* Adjust vertical spacing */
+    border: 1px solid black; /* Add black border */
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Title styles */
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333; /* Set unique color for title background */
+    color: #fff; /* Set text color for visibility */
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 125%; /* 25% larger than section text */
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%; /* Two sections side by side */
+    }
+    .section:nth-child(3) {
+        clear: both; /* Clear float for the third section */
+        width: 100%; /* Full width for the third section */
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%; /* Three sections in a row */
+    }
+}
